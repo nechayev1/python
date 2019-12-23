@@ -1,5 +1,5 @@
 # http://blog.chapagain.com.np/hash-table-implementation-in-python-data-structures-algorithms/
-# импортируем библиотеку времени, для того, чтобы засечь сколько работала программа
+
 import threading
 import time
 
@@ -29,7 +29,7 @@ def search(hash_table, key):
     cell = hash_table[hash_key]     
     #распаралелим тут
     for i, kv in enumerate(cell):	# цикл, enumerate() позволяет перебирать коллекцию элементов.
-        k, v = kv                   # при поиске любого ключа в хеш-таблице мы должны циклически проходить по каждому отдельному подсписку.
+        k, v = kv                   
         if key == k:
             return v                
     print (search(hash_table, 10))#  Nepal
