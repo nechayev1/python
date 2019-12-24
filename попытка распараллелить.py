@@ -35,9 +35,8 @@ def search(hash_table, key):
     print (search(hash_table, 10))#  Nepal
     print (search(hash_table, 20)) #  India
     print (search(hash_table, 30)) #  None
-
-    for _ in range(10):
+for _ in range(10):
         t = threading.Thread(target=search, name= i, args=(hash_table, i))
         t.start()
-    for t in thread_list:
+for t in thread_list:
         t.join()
